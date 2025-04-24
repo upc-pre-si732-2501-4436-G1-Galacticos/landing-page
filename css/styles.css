@@ -1,0 +1,65 @@
+/*Elemento fantasma para que la imagen del showcase se 
+posicione debajo de la barra de navegacion cuando esta 
+se fija en pantalla   */
+
+/* Por defecto, todo el texto usa Open Sans */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Títulos, encabezados y navegación usan Poppins */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand,
+.navbar-nav .nav-link,
+.section-title,
+.btn {
+  font-family: "Poppins", sans-serif;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+.bg-primary {
+  background-color: #beed00 !important;
+}
+
+.bg-dark {
+  background-color: #363b47 !important;
+}
+
+.bg-dark ul li a {
+  color: #fff !important;
+}
+
+.navbar-brand .logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.btn-success {
+  background-color: #beed00 !important;
+  border-color: #beed50 !important;
+  color: black;
+}
+
+.carousel-item img {
+  height: 500px; /* Puedes ajustar este valor según lo que necesites */
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
